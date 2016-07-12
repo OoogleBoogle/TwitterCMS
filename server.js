@@ -2,7 +2,7 @@ var express = require('express'),
     app = express();
     Twit = require('twit'),
     Firebase = require('firebase'),
-    secrets = require('secrets');
+    secrets = require('./secrets');
 
 
 // Allow CORS access for fetch
