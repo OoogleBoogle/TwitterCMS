@@ -52,6 +52,7 @@ stream.on('disconnect', function(message) {
 
 // TODO: Update user only when twitter profile changed
 // TODO: Add more flexability...allow multiple hashtags and urls
+// TODO: Fire off a DM to the user if hashtag not found
 stream.on('tweet', function(tweet) {
   let bands, updates, images, tweet_id = tweet.id;
 
