@@ -13,7 +13,6 @@ app.use(function(req, res, next) {
 
 require('./lib/twitter')(Twit);
 
-
 app.get('*', function(req, res) {
   res.send('Hello World');
 });
