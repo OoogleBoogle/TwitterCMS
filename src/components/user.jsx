@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
+import Bands from './bands';
+import Updates from './updates';
+import Images from './images';
 
 class User extends Component {
   render() {
@@ -10,6 +13,9 @@ class User extends Component {
         <p>{this.props.state.description}</p>
         <img src={this.props.state.image} alt="profile image"/>
         <p>{this.props.state.location}</p>
+        <Bands />
+        <Updates />
+        <Images />
       </div>
     )
   }

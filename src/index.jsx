@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import store from '../redux/store';
 import { Provider } from 'react-redux';
 import User from './components/user';
+
 import { startAllActions } from '../redux/actions/start_actions';
 
 class Main extends Component {
@@ -14,6 +15,7 @@ class Main extends Component {
     return (
       <Provider store={store}>
         <User />
+
       </Provider>
     )
   }
