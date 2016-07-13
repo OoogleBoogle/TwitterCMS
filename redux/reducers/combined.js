@@ -1,11 +1,15 @@
 var combineReducers = require('redux').combineReducers;
 
-var update = require('./update_reducer').update;
-var band = require('./band_reducer').band;
+var updates = require('./update_reducer').updates;
+var bands = require('./band_reducer').bands;
+var images = require('./images_reducer').images;
+var user = require('./user_reducer').user;
 
 var reducers = combineReducers({
-  update: update,
-	band: band
+  updates: updates,
+	bands: bands,
+  images: images,
+  user: user
 });
 
 exports.reducers = reducers;

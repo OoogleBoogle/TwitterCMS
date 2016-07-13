@@ -1,11 +1,11 @@
 let update = require('react-addons-update');
 
-function bandReducer(state = [], action)  {
+function userReducer(state = [], action)  {
   let newState = null;
   switch (action.type) {
-    case 'BAND_RECEIVED':
+    case 'NEW_USER_RECEIVED':
       newState = update(state, {
-        $set: action.bands
+        $set: action.user
       })
       break;
     default:
@@ -13,6 +13,7 @@ function bandReducer(state = [], action)  {
   return newState || state;
 }
 
+
 module.exports = {
-  bands: bandReducer
+  user: userReducer
 }

@@ -1,11 +1,11 @@
 let update = require('react-addons-update');
 
-function bandReducer(state = [], action)  {
+function imageReducer(state = [], action)  {
   let newState = null;
   switch (action.type) {
-    case 'BAND_RECEIVED':
+    case 'IMAGE_RECEIVED':
       newState = update(state, {
-        $set: action.bands
+        $set: action.images
       })
       break;
     default:
@@ -14,5 +14,5 @@ function bandReducer(state = [], action)  {
 }
 
 module.exports = {
-  bands: bandReducer
+  images: imageReducer
 }
