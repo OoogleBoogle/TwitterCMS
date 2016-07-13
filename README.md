@@ -21,5 +21,7 @@ I can add you to the Firebase console, but I'll need your gmail address.
 Handy Links
 
 [Twit Module](https://github.com/ttezel/twit)
+
 [An example of redux and firebase, but the syntax is a little outdated.](https://github.com/krawaller/reduxfirebasedemo)
+
 [The Twitter account, I'll email the password if you need it.](https://twitter.com/UseTweetsAsCMS)
