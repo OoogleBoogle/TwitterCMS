@@ -1,7 +1,8 @@
 var express = require('express'),
     app = express();
     Twit = require('twit'),
-    secrets = require('./secrets');
+    secrets = require('./secrets'),
+    path = require('path');
 
 
 // Allow CORS access for fetch
@@ -11,10 +12,13 @@ app.use(function(req, res, next) {
   next();
 });
 
+let indexPage = path.join(__dirname, 'dist/index.html');
+app.use(express.static(path.join(__dirname, 'dist')));
+
 require('./lib/twitter')(Twit);
 
-app.get('*', function(req, res) {
-  res.send('Hello World');
+app.get('/*', function(req, res) {
+  res.sendFile(indexPage);
 });
 
 
