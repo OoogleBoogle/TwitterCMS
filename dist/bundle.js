@@ -23287,6 +23287,7 @@
 	          'These are the #images tweets'
 	        ),
 	        this.props.state.map(function (image, i) {
+	          console.log(image.src);
 	          return _react2.default.createElement(
 	            'div',
 	            { key: i, className: 'image' },

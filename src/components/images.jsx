@@ -7,6 +7,7 @@ class Images extends Component {
       <div className="gallery">
         <h1>These are the #images tweets</h1>
         {this.props.state.map((image, i) => {
+          console.log(image.src);
           return <div key={i} className="image">
                     <img src={image.src} />
                     <p>{image.description}</p>
