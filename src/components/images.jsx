@@ -1,28 +1,36 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
 
 class Images extends Component {
-  render() {
-    console.log(this.props);
-    return (
-      <div className="gallery">
-        <h1>These are the #images tweets</h1>
-        {this.props.state.map((image, i) => {
-          console.log(image.src);
-          return <div key={i} className="image">
-                    <img src={image.src} alt="whyyyy won't you load?!"/>
-                    <p>{image.description}</p>
-                 </div>
-        })}
-      </div>
-    )
-  }
+    render() {
+        console.log(this.props);
+        return (
+            <div className="gallery">
+                <h1>These are the #images tweets</h1>
+                <div className="row">
+                    {this.props.state.map((image, i) => {
+                        return (
+
+                            <div key={i} className="col s12 m4">
+                                <div className="card small">
+                                    <div className="card-image">
+                                        <img src={image.src}/>
+                                    </div>
+                                    <div className="card-content">
+                                        <p>{image.description}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
+        )
+    }
 }
 
 function mapStateToProps(state, props) {
-  return {
-    state: state.images
-  }
+    return {state: state.images}
 }
 
 const Container = connect(mapStateToProps)(Images);
