@@ -16,7 +16,7 @@
     "watch:js": "npm run build:js && webpack --watch",
     "clean:js": "rm -f dist/bundle.js dist/bundle.js.map",
     "clean:css": "rm dist/css/main.css",
-    "watch:css": "cp -rf assets dist/ && sass sass:dist/css --watch"
+    "watch:css": "sass sass:dist/css --watch"
   },
   "keywords": [],
   "author": "",

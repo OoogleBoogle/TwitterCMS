@@ -8,7 +8,7 @@ class User extends Component {
   render() {
     return (
       <div className="user-component">
-        <h1>The following info comes from Twitter</h1>
+        <h1>Twitter Streaming CMS</h1>
         <p>{this.props.state.name}</p>
         <p>{this.props.state.description}</p>
         <img src={this.props.state.image} alt="profile image"/>

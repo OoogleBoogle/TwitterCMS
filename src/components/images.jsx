@@ -6,7 +6,7 @@ class Images extends Component {
         console.log(this.props);
         return (
             <div className="gallery">
-                <h1>These are the #images tweets</h1>
+                <h1>#images</h1>
                 <div className="row">
                     {this.props.state.map((image, i) => {
                         return (
