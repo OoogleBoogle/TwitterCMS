@@ -3,13 +3,14 @@ import { connect } from 'react-redux';
 
 class Images extends Component {
   render() {
+    console.log(this.props);
     return (
       <div className="gallery">
         <h1>These are the #images tweets</h1>
         {this.props.state.map((image, i) => {
           console.log(image.src);
           return <div key={i} className="image">
-                    <img src={image.src} />
+                    <img src={image.src} alt="whyyyy won't you load?!"/>
                     <p>{image.description}</p>
                  </div>
         })}
