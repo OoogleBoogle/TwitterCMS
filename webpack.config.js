@@ -19,9 +19,17 @@ module.exports = {
                 query: {
                     presets: ['es2015', 'react']
                 }
-            }
+            },
+            {
+                 test: /\.(jpe?g|png|gif|svg|ico)$/i, // images are converted into blobs
+                 loaders: [
+                     'url?limit=8192',
+                     'img'
+                 ]
+               }
         ]
     },
+
     resolve: {
         extensions: ['', '.js', '.jsx']
     },
