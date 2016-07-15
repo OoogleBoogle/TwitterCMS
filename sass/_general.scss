@@ -1,0 +1,36 @@
+$twitter-dark-blue: #0084b4;
+$twitter-logo-blue: #00aced;
+$twitter-verified-blue: #1dcaff;
+$twitter-background-blue: #c0deed;
+
+body {
+  background-color: white;
+}
+
+.user-component {
+  text-align: center;
+}
+
+.section-wrapper {
+  background-color: $twitter-background-blue;
+}
+
+.section-heading {
+  background-color: $twitter-dark-blue;
+  height: 120px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  > h1 {
+    padding-top: 10px;
+    color: white;
+    vertical-align: middle;
+    margin: 0;
+  }
+}
+.section-row {
+  margin: 0;
+  padding: 4em 0;
+}
+.custom-card {
+  background-color: $twitter-verified-blue;
+}

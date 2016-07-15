@@ -1,25 +1,33 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 
 class Updates extends Component {
-  render() {
-    return (
-      <div className="updates">
-        <h1>These are the #updates tweets</h1>
-        {this.props.state.map((update, i) => {
-          return <div key={i} className="update">
-                    <p>{update}</p>
-                 </div>
-        })}
-      </div>
-    )
-  }
+    render() {
+        return (
+            <div className="updates section-wrapper">
+                <div className="section-heading">
+                  <h1>#updates</h1>
+                </div>
+                <div className="row section-row">
+                    {this.props.state.map((update, i) => {
+                        return (
+                            <div key={i} className="col s12 m4">
+                                <div className="card custom-card">
+                                    <div className="card-content white-text">
+                                        <p>{update}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
+        )
+    }
 }
 
 function mapStateToProps(state, props) {
-  return {
-    state: state.updates
-  }
+    return {state: state.updates}
 }
 
 const Container = connect(mapStateToProps)(Updates);
