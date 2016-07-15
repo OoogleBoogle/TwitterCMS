@@ -5,9 +5,11 @@ class Images extends Component {
     render() {
         console.log(this.props);
         return (
-            <div className="gallery">
+            <div className="gallery section-wrapper">
+              <div className="section-heading">
                 <h1>#images</h1>
-                <div className="row">
+              </div>
+                <div className="row section-row">
                     {this.props.state.map((image, i) => {
                         return (
 
