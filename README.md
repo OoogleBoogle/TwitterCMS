@@ -1,27 +1,39 @@
-# Yo Kyle!
-### FORK ME YOU **** :wink:
+#Twitter CMS
 
-So here's the current state of the app, basic idea is with a tweet you can add content to a webpage.
-There's readme's in the lib and redux folders for a breakdown of what's in there.
+### An experiment to see if a website can be updated in real time just using tweets.
 
-The build process is slightly faffy. First run the build task, this will look for a /dist folder, so you might
-need to create an empty folder if it fails first time. Then nodemon the server.js, which will serve up the
-index.html and connect to the twitter and firebase apis. THEN, if you want to play with React,
-run the watch:js task. This will rebuild the JS with every change. Haven't set up hot reloading so you'll need to
-refresh the browser each time.
+#### Concept
 
-Build whatever feature you like dude. Totally up to you. You can faff with React and styling as much as you want,
-the current components are just there as placeholders. There's a problem with the images not pulling from the given
-url....could be because they're shortened...but they work in a browser.
+The idea stems from my days working in bars and playing in bands. It's hard to find the time to keep a full website updated
+with the most upto date news. Hence the idea for this. A website can be linked to the owners Twitter account which will 
+display info based on set heshtags from tweets.
 
-There's also a bunch of TODOs in the twitter.js... but don't expect you to do anything with that. Unless you want to...
+The content is currently pulled from tweets from [this](https://twitter.com/UseTweetsAsCMS) account and, using Firebase's 
+real time database, updates the content in the website in real time. The backend is constantly connected to the twitter 
+account (using the streaming API and Twit module) and, in this case, is listening for 3 specific hashtags, #bands, #updates and #images.  
+It also pulls the user name, headline and location from Twitter. This can easily be changed and expanded to fit the needs 
+of the user.
 
-I can add you to the Firebase console, but I'll need your gmail address.
+#### Issues and Todo's
 
-Handy Links
+Well, it's currently not deployed....that's a problem.
+Need to be able to delete from the DB when deleted from Twitter.
+User info is currently re-written with every tweet. Needs to only be when the profile info is updated.
+
+
+#### Tech Stack
+
+React & Redux
+
+[Firebase](https://firebase.google.com/)
 
 [Twit Module](https://github.com/ttezel/twit)
 
-[An example of redux and firebase, but the syntax is a little outdated.](https://github.com/krawaller/reduxfirebasedemo)
+#### Hosting
 
-[The Twitter account, I'll email the password if you need it.](https://twitter.com/UseTweetsAsCMS)
+Coming Soon....
+
+
+
+
+
