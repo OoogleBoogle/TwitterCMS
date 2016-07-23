@@ -12,6 +12,10 @@
     "clean:js": "rm -f dist/bundle.js dist/bundle.js.map",
     "clean:css": "rm dist/css/style.css dist/css/style.css.map"
   },
+  "engines": {
+    "node": "6.2.0",
+    "npm": "3.8.9"
+  },
   "keywords": [],
   "author": "Simon Attfield",
   "license": "ISC",
