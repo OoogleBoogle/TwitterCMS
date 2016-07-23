@@ -14,29 +14,8 @@ $font-main: 'Raleway', sans-serif;
 
 .page {
   align-content: center;
+  background-color: $twitter-dark-blue;
   display: flex;
   flex-wrap: wrap;
 }
 
-.title-header {
-  background-color: $twitter-dark-blue;
-  box-sizing: border-box;
-  font: 1em $font-head;
-  color: $text-accent;
-  margin: 0;
-  padding: 1em;
-  text-align: center;
-  width: 100%;
-}
-
-.section-content {
-  background-color: $twitter-background-blue;
-  box-sizing: border-box;
-  font: 1.2em $font-main;
-  padding: 1em 0.5em;
-  width: 100%;
-
-  p {
-    margin: 0;
-  }
-}

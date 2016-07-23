@@ -4,8 +4,8 @@ import {connect} from 'react-redux';
 class Bands extends Component {
 	render() {
 		return (
-			<div className="bands">
-				<div className="title-header">
+			<div className="section bands">
+				<div className="section-header">
 					<h1>Upcoming Events</h1>
 					<p>(taken from the #bands tag)</p>
 				</div>

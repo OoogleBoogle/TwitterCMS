@@ -2,32 +2,26 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
 class Images extends Component {
-    render() {
-        return (
-            <div className="gallery section-wrapper">
-              <div className="section-heading">
-                <h1>#images</h1>
-              </div>
-                <div className="row section-row">
-                    {this.props.state.map((image, i) => {
-                        return (
-
-                            <div key={i} className="col s12 m4">
-                                <div className="card small">
-                                    <div className="card-image">
-                                        <img src={image.src}/>
-                                    </div>
-                                    <div className="card-content">
-                                        <p>{image.description}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                    })}
-                </div>
-            </div>
-        )
-    }
+	render() {
+		return (
+			<div className="gallery-container">
+				<div className="section-header">
+					<h1>Image Gallery</h1>
+					<p>(taken from the #images tag)</p>
+				</div>
+				<div className="gallery">
+					{this.props.state.map((image, i) => {
+						return (
+							<div key={i} className="images">
+								<img src={image.src}/>
+								<p>{image.description}</p>
+							</div>
+						);
+					})}
+				</div>
+			</div>
+		)
+	}
 }
 
 function mapStateToProps(state, props) {

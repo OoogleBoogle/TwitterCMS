@@ -1,0 +1,56 @@
+.section {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%; 
+
+  @media screen and (min-width: 688px) {
+    width: 49.333vw;
+  }
+}
+
+.section-header {
+  background-color: $twitter-dark-blue;
+  box-sizing: border-box;
+  font: 1em $font-head;
+  color: $text-accent;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.section-content {
+  background-color: $twitter-background-blue;
+  box-sizing: border-box;
+  font: 1.2em $font-main;
+  padding: 1em 0.5em;
+  width: 100%;
+
+  @media screen and (min-width: 688px) {
+    height: 400px;
+    overflow: scroll;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.listing {
+  margin: 1em auto 0;
+
+  &:before {
+    content: '\00B7';
+    font-size: 2em;
+    font-family: initial;
+  }
+
+  p {
+    line-height: 1.5em;
+    margin: 0.4em 0;
+  }
+
+  &:last-child {
+    margin-bottom: 1em;
+  }
+}
