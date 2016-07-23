@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 
 class Images extends Component {
     render() {
-        console.log(this.props);
         return (
             <div className="gallery section-wrapper">
               <div className="section-heading">
