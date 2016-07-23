@@ -9,6 +9,8 @@ import Images from './components/images';
 
 import { startAllActions } from '../redux/actions/start_actions';
 
+import './scss/main.scss';
+
 class Main extends Component {
   constructor() {
     super();
