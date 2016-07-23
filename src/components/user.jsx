@@ -7,7 +7,7 @@ class User extends Component {
       <div className="user-component">
         <div className="user-info">
           <img src={this.props.state.image} alt="profile image"/>
-          <h5>{this.props.state.name}</h5>
+          <h3>{this.props.state.name}</h3>
           <p>{this.props.state.description}</p>
           <p>{this.props.state.location}</p>
         </div>

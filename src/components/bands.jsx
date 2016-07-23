@@ -4,22 +4,17 @@ import {connect} from 'react-redux';
 class Bands extends Component {
 	render() {
 		return (
-			<div className="bands section-wrapper">
-				<div className="section-heading">
-					<h1 className="">#bands</h1>
+			<div className="bands">
+				<div className="title-header">
+					<h1>Upcoming Events</h1>
+					<p>(taken from the #bands tag)</p>
 				</div>
-				<div className="row section-row">
+				<div className="section-content">
 					{this.props.state.map((band, i) => {
 						return (
-							<div key={i} className="col s12 m4">
-								<div className="card custom-card">
-									<div className="card-content white-text">
-										<p>{band.listing}</p>
-									</div>
-									<div className="card-action">
-										<a className="band-link" href={band.link}>Check it out!</a>
-									</div>
-								</div>
+							<div key={i} className="listing">
+								<p>{band.listing}</p>
+								<a className="band-link" href={band.link}>Check it out!</a>
 							</div>
 						)
 					}) }

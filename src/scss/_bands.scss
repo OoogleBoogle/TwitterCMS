@@ -1,0 +1,23 @@
+.bands {
+  text-align: center;
+  width: 100%;
+
+  .listing {
+    margin: 1em auto 0;
+
+    &:before {
+      content: '\00B7';
+      font-size: 2em;
+      font-family: initial;
+    }
+
+    p {
+      line-height: 1.5em;
+      margin: 0.4em 0;
+    }
+
+    &:last-child {
+      margin-bottom: 1em;
+    }
+  }
+}

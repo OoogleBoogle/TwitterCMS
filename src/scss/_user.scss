@@ -1,13 +1,35 @@
 .user-component {
+	background-color: $twitter-background-blue;
+	box-sizing: border-box;
+	padding: 2em;
   text-align: center;
+	width: 100%;
 }
 
-
-
 .user-info {
-	margin: 3em 0;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 
 	img {
-		width: 70px;
+		border-radius: 50px;
+		height: 48px;
+		margin: 0.5em;
+		width: 48px;
+	}
+
+	h3 {
+		font: 1.6em $font-head;
+		margin: 0.5em;
+	}
+
+	p {
+		font-family: $font-main;
+		font-size: 1.1em;
+
+		&:nth-child(1n) {
+			width: 100%
+		}
 	}
 }

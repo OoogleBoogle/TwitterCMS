@@ -1,6 +1,7 @@
 .banner {
 	background-color: $twitter-dark-blue;
 	color: lighten($twitter-background-blue, 10);
+	font-family: 'Lato', sans-serif;
 	height: 215px;
 	position: relative;
 	text-align: center;
@@ -8,10 +9,14 @@
 
   h1 {
 		@extend %vert-align;
-		font-size: 2.8em;
+		font-size: 2.2em;
 		top: 19%;
     width: 90%;
 		z-index: 1;
+
+		@media screen and (min-width: 426px) {
+			font-size: 2.8em;
+		}
   }
 
 	img {
@@ -23,10 +28,14 @@
 
 	p {
 		@extend %vert-align;
-		font-size: 1.2em;
+		font-size: 1.1em;
 		letter-spacing: 0.02em;
 		top: 67%;
 		width: 90%;
 		z-index: 1;
+
+		@media screen and (min-width: 426px) {
+			font-size: 1.2em;
+		}
 	}
 }

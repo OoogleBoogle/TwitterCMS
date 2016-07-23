@@ -2,6 +2,9 @@ $twitter-dark-blue: #0084b4;
 $twitter-logo-blue: #00aced;
 $twitter-verified-blue: #1dcaff;
 $twitter-background-blue: #c0deed;
+$text-accent: #e8f3f8;
+$font-head: 'Lato', sans-serif;
+$font-main: 'Raleway', sans-serif;
 
 %vert-align {
   left: 50%;
@@ -9,30 +12,31 @@ $twitter-background-blue: #c0deed;
   transform: translate(-50%, -50%);
 }
 
-body {
-  background-color: white;
+.page {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.section-wrapper {
-  background-color: $twitter-background-blue;
-}
-
-.section-heading {
+.title-header {
   background-color: $twitter-dark-blue;
-  height: 120px;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  > h1 {
-    padding-top: 10px;
-    color: white;
-    vertical-align: middle;
+  box-sizing: border-box;
+  font: 1em $font-head;
+  color: $text-accent;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.section-content {
+  background-color: $twitter-background-blue;
+  box-sizing: border-box;
+  font: 1.2em $font-main;
+  padding: 1em 0.5em;
+  width: 100%;
+
+  p {
     margin: 0;
   }
-}
-.section-row {
-  margin: 0;
-  padding: 4em 0;
-}
-.custom-card {
-  background-color: $twitter-verified-blue;
 }
