@@ -1,0 +1,43 @@
+.user-component {
+  text-align: center;
+}
+
+.banner {
+	background-color: $twitter-dark-blue;
+	color: lighten($twitter-background-blue, 10);
+	height: 215px;
+	position: relative;
+  width: 100vw;
+
+  h1 {
+		@extend %vert-align;
+		font-size: 2.8em;
+		top: 19%;
+    width: 90%;
+		z-index: 1;
+  }
+
+	img {
+		@extend %vert-align;
+		opacity: 0.35;
+		top: 50%;
+		width: 220px;
+	}
+
+	p {
+		@extend %vert-align;
+		font-size: 1.2em;
+		letter-spacing: 0.02em;
+		top: 67%;
+		width: 90%;
+		z-index: 1;
+	}
+}
+
+.user-info {
+	margin: 3em 0;
+
+	img {
+		width: 70px;
+	}
+}

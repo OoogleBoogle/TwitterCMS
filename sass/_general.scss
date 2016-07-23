@@ -3,12 +3,14 @@ $twitter-logo-blue: #00aced;
 $twitter-verified-blue: #1dcaff;
 $twitter-background-blue: #c0deed;
 
-body {
-  background-color: white;
+%vert-align {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
-.user-component {
-  text-align: center;
+body {
+  background-color: white;
 }
 
 .section-wrapper {

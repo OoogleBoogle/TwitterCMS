@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import store from '../redux/store';
 import { Provider } from 'react-redux';
 import User from './components/user';
+import Bands from './components/bands';
+import Updates from './components/updates';
+import Images from './components/images';
 
 import { startAllActions } from '../redux/actions/start_actions';
 
@@ -13,14 +16,19 @@ class Main extends Component {
   }
   render() {
     return (
-      <Provider store={store}>
+      <div className="page">
         <User />
-
-      </Provider>
+        <Bands />
+        <Updates />
+        <Images />
+      </div>
+      
     )
   }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(<Main />, document.querySelector('.root'));
+  ReactDOM.render(<Provider store={store}>
+                    <Main />
+                  </Provider>, document.querySelector('.root'));
 });
