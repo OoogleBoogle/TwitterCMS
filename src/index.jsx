@@ -24,7 +24,6 @@ class Main extends Component {
         <Updates />
         <Images />
       </div>
-      
     )
   }
 }

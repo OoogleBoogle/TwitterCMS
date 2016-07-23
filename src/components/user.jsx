@@ -13,7 +13,7 @@ class User extends Component {
           <p>The content below is pulled from a Twitter account and is updated in real time based on specific hashtags.</p>
         </div>
         <div className="user-info">
-          <img className="circle z-depth-1" src={this.props.state.image} alt="profile image"/>
+          <img src={this.props.state.image} alt="profile image"/>
           <h5>{this.props.state.name}</h5>
           <p>{this.props.state.description}</p>
           <p>{this.props.state.location}</p>

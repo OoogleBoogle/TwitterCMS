@@ -11,7 +11,7 @@ class Updates extends Component {
                 <div className="row section-row">
                     {this.props.state.map((update, i) => {
                         return (
-                            <div key={i} className="col s12 m4">
+                            <div key={i} className="">
                                 <div className="card custom-card">
                                     <div className="card-content white-text">
                                         <p>{update}</p>

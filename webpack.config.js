@@ -9,7 +9,7 @@ let plugins = [];
 
 plugins.push(new ExtractTextPlugin('style.css'));
 plugins.push(new HtmlWebpackPlugin({
-    template: 'index.ejs'
+    template: 'src/index.ejs'
 }));
 
 module.exports = {
