@@ -16,8 +16,6 @@ of the user.
 
 #### Issues and Todo's
 
-Well, it's currently not deployed....that's a problem.
-
 Need to be able to delete from the DB when deleted from Twitter.
 
 User info is currently re-written with every tweet. Needs to only be when the profile info is updated.
@@ -25,6 +23,7 @@ User info is currently re-written with every tweet. Needs to only be when the pr
 Basic benchmarking put the pulling of all the info from Firebase at just under 1s (literally about 997ms). Need to add some
 spinners or loading markers. 
 
+Need some way of ordering results by date (for the #bands tag)
 
 #### Tech Stack
 

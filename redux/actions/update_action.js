@@ -8,7 +8,7 @@ module.exports = {
           let updateArray = [];
           let data = snapshot.val();
           for (let text in data) {
-            updateArray.push(data[text].update);
+            updateArray.unshift(data[text].update);
           }
           res(updateArray);
         }).then(updates => {
