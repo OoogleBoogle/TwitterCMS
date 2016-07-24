@@ -35,7 +35,7 @@ React & Redux
 
 #### Hosting
 
-Coming Soon....
+The current app state can be found [here](https://twitter-cms.herokuapp.com/)
 
 
 
