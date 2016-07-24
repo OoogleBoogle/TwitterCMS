@@ -2,4 +2,3 @@ node_modules
 secrets.js
 git rm.*
 .sass-cache
-dist
