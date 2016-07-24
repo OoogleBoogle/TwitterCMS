@@ -23,6 +23,7 @@ User info is currently re-written with every tweet. Needs to only be when the pr
 Basic benchmarking put the pulling of all the info from Firebase at just under 1s (literally about 997ms). Need to add some
 spinners or loading markers. 
 
+Need some way of ordering results by date (for the #bands tag)
 
 #### Tech Stack
 
