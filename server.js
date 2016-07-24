@@ -1,7 +1,6 @@
 var express = require('express'),
     app = express();
     Twit = require('twit'),
-    secrets = require('./secrets'),
     path = require('path');
 
 
