@@ -12,11 +12,11 @@ plugins.push(new HtmlWebpackPlugin({
     template: 'src/index.ejs'
 }));
 // plugins.push(new webpack.IgnorePlugin(/(lib\/firebase\.js|lib\/twitter\.js|server\.js)$/g));
-plugins.push(new webpack.DefinePlugin({
-  "process.env": { 
-     NODE_ENV: JSON.stringify("production") 
-   }
-}))
+// plugins.push(new webpack.DefinePlugin({
+//   "process.env": { 
+//      NODE_ENV: JSON.stringify("production") 
+//    }
+// }))
 module.exports = {
     entry: path.resolve(__dirname, packageData.main),
     output: {
