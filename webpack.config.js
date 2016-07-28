@@ -11,7 +11,7 @@ plugins.push(new ExtractTextPlugin('style.css'));
 plugins.push(new HtmlWebpackPlugin({
     template: 'src/index.ejs'
 }));
-plugins.push(new webpack.IgnorePlugin(/(lib)$/));
+plugins.push(new webpack.IgnorePlugin(/(lib\/firebase\.js|lib\/twitter\.js)$/));
 
 module.exports = {
     entry: path.resolve(__dirname, packageData.main),
@@ -35,7 +35,7 @@ module.exports = {
         },
         {
             test: /\.jsx?$/,
-            exclude: /(node_modules|lib)/,
+            exclude: /(node_modules|lib\/firebase\.js|lib\/twitter\.js)/,
             loader: 'babel',
             query: {
                 presets: ['es2015', 'react']
