@@ -16,8 +16,6 @@ of the user.
 
 #### Issues and Todo's
 
-Need to be able to delete from the DB when deleted from Twitter.
-
 User info is currently re-written with every tweet. Needs to only be when the profile info is updated.
 
 Basic benchmarking put the pulling of all the info from Firebase at just under 1s (literally about 997ms). Need to add some
