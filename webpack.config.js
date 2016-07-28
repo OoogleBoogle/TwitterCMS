@@ -11,7 +11,7 @@ plugins.push(new ExtractTextPlugin('style.css'));
 plugins.push(new HtmlWebpackPlugin({
     template: 'src/index.ejs'
 }));
-plugins.push(new webpack.IgnorePlugin(/(lib\/firebase\.js|lib\/twitter\.js|server\.js)$/g));
+// plugins.push(new webpack.IgnorePlugin(/(lib\/firebase\.js|lib\/twitter\.js|server\.js)$/g));
 plugins.push(new webpack.DefinePlugin({
   "process.env": { 
      NODE_ENV: JSON.stringify("production") 
@@ -39,7 +39,7 @@ module.exports = {
         },
         {
             test: /\.jsx?$/,
-            exclude: /(node_modules|lib\/firebase\.js|lib\/twitter\.js|server\.js)/,
+            exclude: /(node_modules)/,
             loader: 'babel',
             query: {
                 presets: ['es2015', 'react']
