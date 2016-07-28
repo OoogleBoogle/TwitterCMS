@@ -11,6 +11,7 @@ plugins.push(new ExtractTextPlugin('style.css'));
 plugins.push(new HtmlWebpackPlugin({
     template: 'src/index.ejs'
 }));
+plugins.push(new webpack.IgnorePlugin(/(lib)$/));
 
 module.exports = {
     entry: path.resolve(__dirname, packageData.main),
@@ -34,7 +35,7 @@ module.exports = {
         },
         {
             test: /\.jsx?$/,
-            exclude: /(node_modules)/,
+            exclude: /(node_modules|lib)/,
             loader: 'babel',
             query: {
                 presets: ['es2015', 'react']
