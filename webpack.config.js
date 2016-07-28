@@ -11,7 +11,7 @@ plugins.push(new ExtractTextPlugin('style.css'));
 plugins.push(new HtmlWebpackPlugin({
     template: 'src/index.ejs'
 }));
-plugins.push(new webpack.IgnorePlugin(/(lib\/firebase\.js|lib\/twitter\.js|server\.js)$/));
+plugins.push(new webpack.IgnorePlugin(/(lib\/firebase\.js|lib\/twitter\.js|server\.js)$/g));
 
 module.exports = {
     entry: path.resolve(__dirname, packageData.main),
