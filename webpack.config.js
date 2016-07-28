@@ -11,6 +11,9 @@ plugins.push(new ExtractTextPlugin('style.css'));
 plugins.push(new HtmlWebpackPlugin({
     template: 'src/index.ejs'
 }));
+plugins.push(new webpack.EnvironmentPlugin([
+  "NODE_ENV"
+]))
 
 module.exports = {
     entry: path.resolve(__dirname, packageData.main),
