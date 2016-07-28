@@ -11,10 +11,9 @@ plugins.push(new ExtractTextPlugin('style.css'));
 plugins.push(new HtmlWebpackPlugin({
     template: 'src/index.ejs'
 }));
-plugins.push(new webpack.EnvironmentPlugin([
-  "NODE_ENV"
-]))
-
+plugins.push(new webpack.DefinePlugin({
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+}))
 module.exports = {
     entry: path.resolve(__dirname, packageData.main),
     output: {
